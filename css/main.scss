@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Roboto',
+    sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    background-color: #2B2F3A;
+    color: white;
+    font-family: 'Roboto',
+    sans-serif;
+   
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        border-radius: 100px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: #C1C1C1;
+        border-radius: 100px;
+    }
+}
+
+
+.product_search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%; 
+
+
+    h2 {
+        font-size: 5rem;
+        transition: 0.5s;
+      &:hover {
+          color: #C8A03E;
+      }  
+    }
+
+    input {
+        text-align: center;
+        height: 50px;
+        width: 80%;
+    }
+
+}
+
+.container_products {
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1%;
+    justify-content: center;
+ 
+}
+
+.card {
+    max-height: 550px;
+    max-width: 20%;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 1%;
+    border: solid, 3px, black;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        border-radius: 100px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: #C1C1C1;
+        border-radius: 100px;
+    }
+
+    img {
+        min-width: 80px;
+        max-width: 80px;
+    }
+}
+
+
+    
